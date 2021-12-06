@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Application Form</title>
+  <meta name="viewport" content="width=702">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <h1>Course Application</h1>
+
+  <form id="application-form">
+    <fieldset>
+      <legend>Your Contact Info</legend>
+
+      <div class="form-row">
+        <label for="firstName">First Name</label>
+        <input type="text" name="name[first]" id="firstName" autofocus>
+      </div>
+
+      <div class="form-row">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="name[last]" id="lastName">
+      </div>
+
+      <div class="form-row">
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" maxlength="10" id="phone">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Skills &amp; Interests</legend>
+
+      <div class="form-row">
+        <label for="course">Course</label>
+        <select id="course">
+          <option>Select One</option>
+          <optgroup label="Web Development">
+            <option value="frontEnd">Front-end</option>
+            <option value="backEnd">Back-end</option>
+          </optgroup>
+          <optgroup label="Design">
+            <option value="visualDesign">Visual Design</option>
+            <option value="userExperience">User Experience</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="pastExperience">Past Experience</label>
+        <textarea name="pastExperience" id="pastExperience"></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Anything Else?</legend>
+
+      <div class="form-row">
+        <label for="referral">Referral</label>
+        <select id="referral">
+          <option value="none">None</option>
+          <option value="friend">Friend</option>
+          <option value="instructor">Instructor</option>
+          <option value="online">Online</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="comments">Comments</label>
+        <textarea id="comments"></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <input type="submit" value="Save Draft">
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+</body>
+<script src="main.js"></script>
+</html>
