@@ -85,3 +85,7 @@ input[type="text"] {
 textarea {
   display: block;
 }
+
+#errors {
+  color: red;
+}
